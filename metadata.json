@@ -1,0 +1,5 @@
+{
+    "name": "Contract Lens",
+    "description": "An AI-powered legal document analyzer that detects predatory clauses and translates legalese into plain English based on your specific role.",
+    "requestFramePermissions": []
+  }
