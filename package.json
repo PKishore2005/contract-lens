@@ -33,5 +33,5 @@
     "clean": "rm -rf dist node_modules/.vite",
     "analyze": "npm run build && npx vite-bundle-analyzer dist/assets/*.js"
   },
-  "homepage": "https://kishoreprakash.github.io/contract-lens"
+  "homepage": "https://kishoreprakash.github.io/contract-lens-app"
 }

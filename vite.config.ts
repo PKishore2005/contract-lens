@@ -4,7 +4,7 @@ import { resolve } from 'path'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/contract-lens/', // GitHub Pages repository name
+  base: '/contract-lens-app/', // GitHub Pages repository name
   resolve: {
     alias: {
       '@': resolve(__dirname, 'src'),
