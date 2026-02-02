@@ -1,19 +1,13 @@
 import { GoogleGenerativeAI, SchemaType } from "@google/generative-ai";
 import { AnalysisResult, ModuleType, ScamAnalysis } from '../types';
 
-// Debug environment variables at module load time
-console.log("🔧 Module loading - Environment check:");
-console.log("   - import.meta.env:", (import.meta as any)?.env);
-console.log("   - VITE_API_KEY:", (import.meta as any)?.env?.VITE_API_KEY ? "***PRESENT***" : "MISSING");
-
 // Get API key from environment variables with detailed debugging
 // Get API key from environment variables with detailed debugging
 const getApiKey = (): string => {
   console.log("🔍 Environment variable analysis:");
   console.log("   - import.meta exists:", !!import.meta);
-  console.log("   - import.meta.env exists:", !!(import.meta as any)?.env);
   
-  const env = (import.meta as any)?.env || {};
+  const env = import.meta.env || {};
   console.log("   - Available env keys:", Object.keys(env));
   console.log("   - All env values:", env);
   
